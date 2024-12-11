@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+nextjs-portal {
+  position: absolute;
+}
+
+@layer components {
+  /* Customize the scrollbar in Webkit-based browsers (Chrome, Safari, Edge) */
+  ::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px; /* Rounded corners */
+    @apply bg-zinc-600 hover:bg-zinc-500;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Background color of the scrollbar track */
+    border-radius: 10px; /* Rounded corners of the track */
+    @apply bg-zinc-700;
+  }
+}
